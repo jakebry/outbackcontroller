@@ -18,6 +18,7 @@ bot = commands.Bot(command_prefix='/')
 def start_webdriver():
     options = webdriver.ChromeOptions()
     options.add_argument("--disable-notifications")
+    options.add_argument("--headless")  # Run in headless mode
     # Specify the path to the ChromeDriver if it's not in your PATH
     driver = webdriver.Chrome(options=options)
     return driver
