@@ -12,7 +12,8 @@ ATERNOS_USERNAME = 'YOUR_ATERNOS_USERNAME'
 ATERNOS_PASSWORD = 'YOUR_ATERNOS_PASSWORD'
 
 # Discord bot setup
-bot = commands.Bot(command_prefix='/')
+intents = discord.Intents.default()
+bot = commands.Bot(command_prefix='/', intents=intents)
 
 # Function to initialize the Selenium WebDriver
 def start_webdriver():
